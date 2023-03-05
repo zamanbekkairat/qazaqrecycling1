@@ -1,0 +1,123 @@
+@mixin grid {
+    display: grid;
+    gap: 120px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media only screen and (min-width:1024px) {
+    .feedback {
+        &-block {
+            background: #FFFFFF;
+            border: 1.5px solid #7E7370;
+            max-width: 690px;
+            padding: 33px 67px;
+            .form-group {
+                max-width: max-content;
+                input {
+                    padding: 10px 20px;
+                    height: 23px;
+                    width: 233px;
+                    &+input {
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        h1 {
+            font-size: 50px;
+            margin: 0 0 10px;
+        }
+        .welcome {
+            padding: 170px 0;
+            .logo {
+                display: none;
+            }
+            &-text {
+                max-width: 900px;
+                p {
+                    line-height: 38px;
+                }
+            }
+        }
+        .benefits {
+            &-text {
+                max-width: 580px;
+                h2 {
+                    line-height: 40px;
+                }
+            }
+            .logo {
+                display: block;
+            }
+            &-blocks {
+                align-items: center;
+                display: flex;
+                justify-content: space-between;
+            }
+            &-block {
+                display: grid;
+                gap: 20px 60px;
+                grid-template-columns: 1fr 1fr;
+                max-width: 700px;
+                &__item {
+                    margin-top: 40px;
+                }
+            }
+        }
+        .product {
+            &-blocks {
+                @include grid;
+            }
+            &-block {
+                &+.product-block {
+                    margin-top: 0;
+                }
+            }
+        }
+        .target {
+            &-block {
+                display: grid;
+                gap: 50px;
+                grid-template-columns: 50% 50%;
+                img {
+                    margin-left: 0;
+                }
+            }
+        }
+        .info {
+            margin: 50px 0 95px;
+            &-blocks {
+                @include grid;
+                img {
+                    width: 100%;
+                }
+            }
+            &-block {
+                &:nth-child(2) {
+                    margin-top: 220px;
+                }
+            }
+        }
+        .faq {
+            .accordion {
+                &__text {
+                    padding: 40px 120px;
+                    span {
+                        border-radius: 6px;
+                        left: 37px;
+                        height: 31px;
+                        top: 40px;
+                        width: 31px;
+                        &::before,
+                        &::after {
+                            height: 1.6px;
+                            width: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

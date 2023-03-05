@@ -1,0 +1,111 @@
+.footer {
+    background: #7E7370;
+    color: #fff;
+    padding: 0 0 115px;
+    a {
+        color: #fff;
+    }
+    .maps {
+        iframe {
+            width: 100%;
+        }
+    }
+    .feedback-block {
+        margin-top: 0;
+        padding: 60px 0 0;
+        h2 {
+            color: #fff;
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
+@media only screen and (min-width:1024px) {
+    .footer {
+        padding: 270px 0 30px;
+        position: relative;
+        .feedback-block {
+            max-width: 100%;
+            padding: 33px 67px;
+            position: absolute;
+            top: -5%;
+            width: 836px;
+            h2 {
+                color: #7E7370;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 22px;
+                margin: 0 0 27px;
+            }
+            button {
+                @include btn;
+            }
+        }
+        &-grid {
+            display: grid;
+            grid-template-areas: "text logo" "text social";
+        }
+        &-logo {
+            grid-area: logo;
+            margin-top: 45px;
+        }
+        &-text {
+            grid-area: text;
+            max-width: 400px;
+            position: relative;
+            &::after {
+                border: 1px #fff solid;
+                content: '';
+                left: 110%;
+                position: absolute;
+                top: 44%;
+                transform: rotate(90deg);
+                width: 236px;
+            }
+            h2 {
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 110%;
+            }
+        }
+        .social {
+            grid-area: social;
+            a {
+                text-decoration: none;
+                &+a {
+                    margin-left: 12px;
+                }
+            }
+            .mail {
+                display: block;
+                margin: 20px 0 0;
+            }
+        }
+        .location {
+            p {
+                max-width: 250px;
+            }
+            .maps {
+                iframe {
+                    max-width: 561px;
+                }
+            }
+        }
+        .last-block {
+            margin: 45px 0 0;
+            position: relative;
+            a,
+            p {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 16px;
+            }
+            .dev {
+                bottom: 0;
+                position: absolute;
+                right: 0;
+            }
+        }
+    }
+}
