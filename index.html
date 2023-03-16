@@ -5,7 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Стрейч пленки Алматы</title>
+    <title>Стрейч пленка в Алматы для упаковки и по всему Казахстану, полиэтилен ПВД, гранулы ПВД, переработка мусора</title>
+    <meta name="description" content="Qazaq Recycling - сбор и переработка мусора полиэтилена в Казахстане, выпуск стрейч пленки для упаковки (полиэтилен ПВД), гранулы ПВД">
+    <meta name="keywords" content="Стрейч пленки алматы, стрейч пленка, пвд, переработка мусора, купить гранулы, стрейч пленка, производство гранул, стрейч пленка купить в алматы, стрейч пленка для упаковки, пвд рулоны, полиэтилен пвд, рулон стрейча, гранулы пластика, lldpe, рулон стрейч плнеки, гранула пвд, стрейч пленка цена, пленка пвд, стрейч пленка 500мм, сколько стоит стрейч, купить рулон стрейча"
+    />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -59,7 +62,7 @@
             <div class="header-block">
 
                 <div class="switch">
-                    <a href="" class="lang">ru</a>
+                    <a href="javascript:void(0)" class="lang active">ru</a>
                     <a href="" class="lang">en</a>
                 </div>
 
@@ -86,6 +89,23 @@
                     <h1>Стрейч пленка для упаковки гранулы ПВД, переработка мусора</h1>
                     <p>в Алматы и&nbsp;по&nbsp;всему&nbsp;Казахстану</p>
                 </div>
+            </div>
+
+            <button class="form-feedback close-form">
+                <img src="img/phone.svg" alt="">
+                <p>Перезвонить Вам?</p>
+            </button>
+
+            <div class="form-group form-group1">
+                <h2>Перезвонить Вам?</h2>
+                <form method="post" action="/ajax/feedback" data-pjax>
+                    <input type="text" placeholder="Ваше имя">
+                    <input type="tel" class="phone" placeholder="+7(___)___-____">
+                    <input type="button" onclick="sendEmail()" value="отправить заявку" class="button">
+                </form>
+                <img src="img/menu-logo.svg" alt="">
+
+                <span class="close-form"></span>
             </div>
         </section>
 
@@ -143,8 +163,36 @@
                             </p>
                             <button class="btn1" onclick="readMore1()">подробнее</button>
 
-                            <div class="btn-block">
+                            <div class="streich">
+                                <p>Стрейч пленка со следующими характеристиками является самой популярной и всегда имеется у нас на складе</p>
+
+                                <div class="streich-block">
+                                    <div class="streich-text">
+                                        <h4>толщина, мкн.</h4>
+                                        <h4>17</h4>
+                                        <h4>20</h4>
+                                        <h4>23</h4>
+                                    </div>
+
+                                    <div class="streich-text">
+                                        <h4>намотка, м.</h4>
+                                        <h4>255</h4>
+                                        <h4>217</h4>
+                                        <h4>189</h4>
+                                    </div>
+                                </div>
+                                <div class="sb-2">
+                                    <div class="text">
+                                        <h4>ширина рулона</h4>
+                                        <h3>500 мм.</h3>
+                                    </div>
+                                    <img src="img/weights.svg" alt="">
+                                </div>
                                 <p><b>цена:</b>&nbsp;договорная</p>
+
+                            </div>
+
+                            <div class="btn-block">
                                 <a href="" class="buy">купить</a>
                                 <a href="" class="kaspi">кaspi</a>
                             </div>
@@ -157,7 +205,7 @@
                         <div class="text">
                             <h2>Гранула ПВД</h2>
                             <p>
-                                Благодаря глубокому уровню переработки наша гранула Стрейч <span class="dots2">...</span> <span class="more2">(LLDPE) имеет высокие характеристики и используется для опроизводства стрейч-пленки в Алматы. Наши клиенты покупают стрейч гранулу для производства упаковки.
+                                Благодаря глубокому уровню переработки наша гранула Стрейч (LLDPE)<span class="dots2">...</span> <span class="more2">имеет высокие характеристики и используется для опроизводства стрейч-пленки в Алматы. Наши клиенты покупают стрейч гранулу для производства упаковки.
                                 <br>
                                 <br>Внедрите переработанное сырье в часть своей бизнес-стратегии для получения выгоды и заботы об экологии нашей страны.</span>
                             </p>
@@ -195,13 +243,14 @@
         <section class="feedback">
             <div class="container">
                 <div class="feedback-block">
-
                     <h2>Хотите чтобы мы перезвонили и рассказали вам подробнее о нашем товаре?</h2>
 
                     <div class="form-group">
-                        <input type="text" placeholder="Ваше имя">
-                        <input type="tel" class="phone" placeholder="+7(___)___-____">
-                        <button>отправить заявку</button>
+                        <form method="post" action="/ajax/feedback" data-pjax>
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="tel" class="phone" placeholder="+7(___)___-____">
+                            <input type="button" onclick="sendEmail()" value="отправить заявку" class="button">
+                        </form>
                     </div>
                 </div>
             </div>
@@ -210,15 +259,18 @@
         <section class="target">
             <div class="container">
                 <div class="target-text">
-                    <h2>Мы создавали Qazaq Recycling с&nbsp;бунтарским духом и&nbsp;для высокой цели</h2>
-                    <p>Изменить подход к&nbsp;сбору, производству и&nbsp;потреблению пластика в&nbsp;нашей&nbsp;стране</p>
+                    <h2>Мы создавали Qazaq Recycling <br> с&nbsp;бунтарским духом и&nbsp;для высокой цели</h2>
+                    <p>Изменить подход к&nbsp;сбору, производству <br>и&nbsp;потреблению пластика в&nbsp;нашей&nbsp;стране</p>
                 </div>
             </div>
 
             <div class="target-blocks">
                 <div class="container">
                     <div class="target-block">
-                        <img src="img/target-img.png" srcset="img/target-img-2x.png 2x" alt="">
+                        <picture>
+                            <source media="(min-width: 1024px)" srcset="img/target-desk.png 2x">
+                            <img src="img/target-img.png" srcset="img/target-img-2x.png 2x" alt="">
+                        </picture>
                         <p>
                             Мы прикладываем все усилия, чтобы стать компанией, которая перерабатывает разнообразные виды пластиковых отходов в конечный продукт, продаваемый в Казахстане.
                             <br>
@@ -355,9 +407,11 @@
                 <h2>Хотите чтобы мы перезвонили и рассказали вам подробнее о нашем товаре?</h2>
 
                 <div class="form-group">
-                    <input type="text" placeholder="Ваше имя">
-                    <input type="tel" class="phone" placeholder="+7(___)___-____">
-                    <button>отправить заявку</button>
+                    <form method="post" action="/ajax/feedback" data-pjax>
+                        <input type="text" placeholder="Ваше имя">
+                        <input type="tel" class="phone" placeholder="+7(___)___-____">
+                        <input type="button" onclick="sendEmail()" value="отправить заявку" class="button">
+                    </form>
                 </div>
             </div>
 
@@ -375,11 +429,11 @@
 
                 <div class="social">
                     <a href="">
-                        <img src="img/insta.svg" alt="insta">
+                        <img src="img/insta.svg" alt="insta" target="_blank">
                     </a>
 
                     <a href="">
-                        <img src="img/facebook.svg" alt="facebook">
+                        <img src="img/facebook.svg" alt="facebook" target="_blank">
                     </a>
 
                     <a href="mailto:info@qazaqrecycling.com" class="mail">info@qazaqrecycling.com</a>
@@ -388,7 +442,7 @@
 
 
             <div class="location">
-                <p>050024 Республика Казахстан г.&nbsp;Алматы, мкр. Дархан ул.&nbsp;Сабатаева д. 18</p>
+                <p>050024 Республика Казахстан г.&nbsp;Алматы, мкр.&nbsp;Дархан ул.&nbsp;Сабатаева д. 18</p>
 
                 <div class="maps">
                     <a class="dg-widget-link" href="http://2gis.kz/almaty/firm/9429940001624571/center/76.87863349914551,43.3197139899699/zoom/16?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=bigMap">Посмотреть на карте Алматы</a>
@@ -419,7 +473,7 @@
                 <a href="">Политика конфиденциальности.</a>
 
                 <p>
-                    © Qazaq Recycling 2022. Все права защищены.
+                    © Qazaq Recycling 2023. Все&nbsp;права&nbsp;защищены.
                 </p>
 
                 <a href="https://sunwellight.com/?utm_source=kwr&utm_medium=ref" class="dev" target="_blank">Создано в SunwelLight</a>
@@ -432,6 +486,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js" defer></script>
 </body>
 
