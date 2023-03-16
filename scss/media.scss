@@ -21,6 +21,10 @@
                         margin-left: 8px;
                     }
                 }
+                .button {
+                    height: auto;
+                    padding: 14px 20px;
+                }
             }
         }
     }
@@ -38,6 +42,48 @@
                 max-width: 900px;
                 p {
                     line-height: 38px;
+                }
+            }
+            .form-feedback {
+                bottom: 10%;
+                left: auto;
+                right: 0;
+                position: fixed;
+                z-index: 5;
+            }
+            .form-group {
+                top: auto;
+                bottom: 30px;
+                max-height: 270px;
+                max-width: 420px;
+                padding: 36px 30px 20px 40px;
+                right: 50px;
+                z-index: 5;
+                h2 {
+                    font-size: 25px;
+                    line-height: 22px;
+                    margin: 0 0 18px;
+                }
+                input {
+                    margin: 3px 0;
+                    max-width: 270px;
+                }
+                .button {
+                    margin-top: 5px;
+                }
+                img {
+                    display: none;
+                }
+                .close-form {
+                    cursor: pointer;
+                    height: 31px;
+                    right: 21px;
+                    top: 8px;
+                    width: 31px;
+                    &::before,
+                    &::after {
+                        width: 16px;
+                    }
                 }
             }
         }
@@ -75,14 +121,19 @@
                     margin-top: 0;
                 }
             }
+            h2 {
+                width: max-content;
+            }
         }
         .target {
             &-block {
                 display: grid;
                 gap: 50px;
-                grid-template-columns: 50% 50%;
+                grid-template-columns: 55% 45%;
                 img {
-                    margin-left: 0;
+                    width: 985px;
+                    height: 472px;
+                    margin-left: 20%;
                 }
             }
         }
